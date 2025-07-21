@@ -104,8 +104,8 @@ OS details: Linux 3.10 - 4.11
 
 ## 📸 Screenshorts
 
-![Nmap Scan Result](/home/rahul/Documents/ss1.png)
-![Nmap Scan Result](/home/rahul/Documents/ss2.png)
+![Nmap Scan Result](ss1.png)
+![Nmap Scan Result](ss2.png)
 
 ___
 
