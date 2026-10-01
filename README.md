@@ -1,148 +1,45 @@
-# 🚀 Network Scanning Procedure using Nmap
+# Hi there, I'm Rahul! 👋
 
-This guide outlines a step-by-step approach for beginners to perform a network scan using **Nmap** in **Linux** (especially Kali Linux). It helps identify active devices, open ports, running services, and potential vulnerabilities on a local network.
+An aspiring **Backend & Cloud-Native Developer** focused on building resilient, scalable systems with **Java, Spring Boot, and Microservices architecture**. Passionate about clean backend design, containerization, and integrating modern AI capabilities.
 
----
-
-## ⚙️ Lab Setup Instructions
-
-1. Install **VirtualBox** or **VMware Workstation** on your host machine.
-2. Download the required virtual machines:
-
-   * [Kali Linux](https://www.kali.org/get-kali/)
-   * 
-3. Configure a **Host-Only Network Adapter** and assign it to both VMs.
-4. Ensure both machines are on the same subnet (e.g., `192.168.1.1/24`).
-5. Confirm network connectivity using:
-
-```bash
-ping 192.168.56.101
-```
+Currently on a dedicated **90-Day Engineering Sprint** to master advanced distributed systems, daily DSA, and enterprise-grade architecture.
 
 ---
 
-## 🔹 Step 1: Identify Your IP and Gateway
+### 🚀 About Me
 
-Use the following commands to check your own system's IP and default gateway:
-
-```bash
-ip a
-ip route | grep default
-```
-
-**Example:**
-
-- IP Address: `192.168.1.5`
-- Default Gateway (Router): `192.168.1.1`
+- 🔭 Currently building: **Microservices-based backend systems using Spring Boot & Spring Data JPA**
+- 🐳 Containerizing with: **Docker & PostgreSQL for clean local-to-production workflows**
+- 🧠 Deepening knowledge in: **Data Structures & Algorithms (DSA in Java) & Core System Design**
+- 🤖 Exploring: **Python fundamentals & Applied AI/ML concepts**
+- 🎨 Frontend familiarity: **Basic UI integration using React.js**
+- ⚡ 90-Day Goal: **Be production-ready and industry-hireable through daily GitHub commits & active building**
 
 ---
 
-## 🔹 Step 2: Basic Scan of a Target (Router)
+### 🛠️ Tech Stack & Tooling
 
-Scan the router or any host to identify open ports, OS, and services.
+**Core Backend & Languages:**
+![Java](https://img.shields.io/badge/Java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-F2F4F9?style=for-the-badge&logo=spring-boot)
+![Spring Data JPA](https://img.shields.io/badge/Spring_Data_JPA-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 
-```bash
-nmap -A 192.168.1.1
-```
+**Databases & DevOps:**
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 
-This command performs:
-- OS detection
-- Port scanning
-- Service and version detection
-- Traceroute
-
----
-
-## 🔹 Step 3: Discover Active Hosts on the Network
-
-Scan your entire subnet (e.g., `/24`) to find live hosts:
-
-```bash
-nmap -sn 192.168.1.0/24
-```
-
-This returns a list of devices currently connected to the local network.
+**Frontend & Exploring:**
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![AI/ML Basics](https://img.shields.io/badge/AI%2FML-Learning-brightgreen?style=for-the-badge&logo=google)
 
 ---
 
-## 🔹 Step 4: Scan All Ports on a Host
+### 📈 Current Sprint: 90 Days to Job Ready
 
-Scan all 65535 TCP ports of a specific target:
-
-```bash
-nmap -p- 192.168.1.1
-```
-
-This gives a complete view of open ports beyond the default set.
-
----
-
-## 🔹 Step 5: Vulnerability Scan (Optional)
-
-Run basic vulnerability detection scripts:
-
-```bash
-nmap --script vuln 192.168.1.1
-```
-
-Note: This is a basic vulnerability check and not a full security audit.
-
----
-
-## 🧾 Sample Output
-
-```
-PORT     STATE SERVICE VERSION
-22/tcp   open  ssh     OpenSSH 7.9 (protocol 2.0)
-80/tcp   open  http    Apache httpd 2.4.29
-3306/tcp open  mysql   MySQL 5.7.24
-MAC Address: 44:6D:57:AA:BB:CC (TP-Link Technologies)
-OS details: Linux 3.10 - 4.11
-```
-
----
-
-## 📸 Screenshorts
-
-![Nmap Scan Result](ss1.png)
-![Nmap Scan Result](ss2.png)
-
-___
-
-## 🛡️ Risk Assessment & Recommendations
-
-| Port | Service | Risk             | Recommendation                     |
-|------|---------|------------------|------------------------------------|
-| 22   | SSH     | Brute-force      | Use key-based authentication       |
-| 80   | HTTP    | Plain-text data  | Use HTTPS & update web server      |
-| 3306 | MySQL   | Data exposure    | Close or firewall this port        |
-
----
-
-## ✅ Tools Required
-
-- **Nmap** (Pre-installed in Kali Linux)
-- Local network access
-- Basic terminal skills
-
----
-
-## 🙏 Acknowledgment
-
-Special thanks to [Biswadeb Mukherjee](https://github.com/official-biswadeb941) for technical guidance and strategic input throughout this lab simulation. His expertise in offensive security, enumeration tactics, and adversarial tooling played a vital role in this project’s successful execution.
-
-
----
-
-## 👨‍💻 Author
-
-**Rahul (Linux Username: `rahul`)**  
-Beginner Cybersecurity Enthusiast | Kali Linux User
-
----
-
-## 📚 References
-
-- [Nmap Official Docs](https://nmap.org/book/)
-- [Nmap Cheat Sheet (PDF)](https://nmap.org/book/inst-windows.html)
-- [Kali Linux Tools](https://tools.kali.org/)
+```text
+[Day 01 - 30] ➔ Java DSA Fundamentals + RESTful Services with Spring JPA & Postgres
+[Day 31 - 60] ➔ Microservices (API Gateway, Service Discovery, Dockerization)
+[Day 61 - 90] ➔ End-to-End System Project + React Integration + AI APIs Exploration
